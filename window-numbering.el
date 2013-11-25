@@ -107,7 +107,7 @@ If prefix ARG is given, delete the window instead of selecting it."
 			  (frame-selected-window)
 			  window-numbering-previous-windows)
                  (select-window window)))
-    (error "No window numbered %s" i))))
+      (error "No window numbered %s" i))))
 
 (defun window-numbering-select-previous-window ()
   "Select the last selected window"
